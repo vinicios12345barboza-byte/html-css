@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu proprio servidor</p>
+
+    <video width="560" poster="imagens/eu.png" controls autoplay loop> 
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <source src="midia/mp4.webm" type="video/webm">
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i7L19SOqbNM?si=ym7N4IptuItOxMaW" 
+    title="YouTube video player" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin"
+     allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/750231066?badge=0&amp;
+    autopause=0&amp;player_id=0&amp;app_id=58479"
+     width="560" height="315" frameborder="0" allow="autoplay; fullscreen; 
+     picture-in-picture; clipboard-write; encrypted-media; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" 
+     title="JAWNY - adios [Official Music Video]"></iframe>
+
+</body>
+</html>

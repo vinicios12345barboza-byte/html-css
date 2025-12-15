@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#A45A52; /* Vinho / Rosa Queimado */
+    --secondary-color: #4a2c2a; /* Marrom Escuro (Texto) */
+    --background-light: #fcf8f3; /* Bege Claro */
+    --font-serif: "Playfair Display", serif; /* Sugestão de fonte elegante */
+    --font-sans: "Roboto", sans-serif; /* Sugestão de fonte limpa */
+}
+
+body{
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    color: var(--secondary-color);
+    line-height: 1.2;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+/* --- CABEÇALHO --- */
+.main-header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Fixo no topo */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.main-nav a {
+    margin-left: 25px;
+    color: var(--secondary-color);
+}
+
+.cta-link {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+
+.menu-toggle {
+    display: none; /* Esconder no desktop */
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+/* Menu Mobile (Inicialmente escondido) */
+.mobile-nav {
+    display: none; 
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px; /* Abaixo do header */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-nav a {
+    padding: 15px 5%;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+/* --- SEÇÃO HERO --- */
+.hero-section {
+    padding: 80px 5%; 
+    background-color: var(--background-light); 
+    display: grid;
+    grid-template-columns: 3fr 2fr; 
+    gap: 40px; 
+    align-items: center;
+    min-height: 80vh;
+}
+
+.hero-section h1 {
+    font-size: 3em; 
+    margin-bottom: 0.5em;
+}
+
+.hero-section .subtitle {
+    font-size: 1.25em;
+    color: #6a5e5c;
+    margin-bottom: 1.5em;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* CTA Geral */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white !important;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #8c453c;
+    transform: translateY(-2px);
+}
+
+.trust-message {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6a5e5c;
+}
+
+/* --- SEÇÃO CARDS (Dor e Solução) --- */
+.cards-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.cards-section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    border-top: 4px solid var(--primary-color);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* --- SEÇÃO AUTORA (Grid Assinétrico) --- */
+.autora-section {
+    background-color: var(--background-light);
+    padding: 80px 5%;
+}
+
+.autora-grid {
+    display: grid;
+    /* Grid: 40% imagem / 60% texto */
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.autora-info h2 {
+    margin-bottom: 20px;
+}
+
+.autora-info p {
+    margin-bottom: 15px;
+}
+
+.autora-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%; /* Imagem redonda */
+    border: 5px solid white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.signature {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px !important;
+    color: var(--primary-color);
+}
+
+/* --- SEÇÃO FORMULÁRIO --- */
+.form-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-bottom: 30px;
+}
+
+.price-box {
+    margin-bottom: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.2em;
+}
+
+.new-price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.new-price span {
+    font-size: 1.5em;
+    color: #E74C3C; /* Preço em destaque */
+}
+
+.purchase-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.purchase-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.purchase-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.purchase-form .cta-button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- RODAPÉ --- */
+.main-footer {
+    background-color: var(--secondary-color);
+    color: #f4f4f4;
+    padding: 30px 5%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.main-footer a {
+    color: #f4f4f4;
+    margin: 0 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.main-footer a:hover {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+/* ========================================= */
+/* --- MEDIA QUERIES (RESPONSIVIDADE) --- */
+/* ========================================= */
+@media (max-width: 900px) {
+    /* --- Autora (Inverte a ordem no grid para o mobile) --- */
+    .autora-grid {
+        grid-template-columns: 1fr;
+    }
+    .autora-image {
+        order: -1; /* Coloca a imagem da autora antes do texto */
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* --- Cabeçalho Mobile --- */
+    .main-nav {
+        display: none; /* Oculta a navegação principal */
+    }
+    .menu-toggle {
+        display: block; /* Mostra o botão do menu hamburger */
+    }
+    
+    /* --- Hero Mobile --- */
+    .hero-section {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        padding: 40px 5%;
+        min-height: auto;
+    }
+    .hero-content {
+        order: 2; /* Texto fica embaixo */
+        margin-top: 20px;
+    }
+    .hero-image {
+        order: 1; /* Imagem fica em cima */
+    }
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    .hero-image img {
+        width: 60%;
+    }
+    
+    /* --- Autora e Seções --- */
+    .autora-section {
+        padding: 40px 5%;
+    }
+}
