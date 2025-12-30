@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .destaque{
+            background-color: rgb(90, 90, 207);
+        }
+
+        .cnome{
+            background-color: lightseagreen;
+        }
+        .cgrupo{
+            background-color: lightcoral;
+        }
+        .cprofiss{
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabela</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="cgrupo" span="2">
+        <col class="cprofiss">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Vinicios Bianco</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Sarah Vieira</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Marketing Digital</td>
+        </tr>
+        <tr>
+            <td>Gigi</td>
+            <td>F</td>
+            <td>37</td>
+            <td>Desingr</td>
+        </tr>
+        <tr>
+            <td>Guanabara</td>
+            <td>M</td>
+            <td>47</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Neusa maria</td>
+            <td>F</td>
+            <td>65</td>
+            <td>Aposentada</td>
+        </tr>
+        <tr>
+            <td>Fab</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Omaldo Lamandro</td>
+            <td>M</td>
+            <td>79</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+</body>
+</html>
