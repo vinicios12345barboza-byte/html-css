@@ -202,7 +202,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "software Developer";
+    content: "Desenvolvedor de software ";
     color: darkblue;
     animation: words 20s infinite;
 }
@@ -220,22 +220,22 @@ span{
 
 @keyframes cursor{
     to{
-        border-left: 3px solid darkblue;
+        border-left: 2px solid darkblue;
     }
 }
 
 @keyframes words{
     0%, 20%{
-        content: "Web Developer";
+        content: "Desenvolvedor Web";
     }
     21%, 40%{
-        content: "Developer";
+        content: "Desenvolvedor";
     }
     41%, 60%{
         content: "Web Designer";
     }
     61%, 80%{
-        content: "Youtuber";
+        content: "Fullstack";
     }
     81%, 100%{
         content: "Script Writer";
