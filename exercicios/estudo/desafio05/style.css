@@ -209,8 +209,7 @@ span{
 
 .typing-text span::after{
     content: "";
-    background-color: black;
-    position: absolute;
+    background-color: transparent;
     width: calc(100% + 8px);
     height: 100%;
     border-left: 3px solid black;
@@ -220,7 +219,7 @@ span{
 
 @keyframes cursor{
     to{
-        border-left: 2px solid darkblue;
+        border-left: 2px solid darkblue
     }
 }
 
