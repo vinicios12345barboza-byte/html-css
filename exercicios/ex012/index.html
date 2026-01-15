@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Foldit:wght@100..900&display=swap');
+        body{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: "Bruno Ace", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor:</p>
+    <video width="560px" poster="imagens/praia.jpeg" controls autoplay>
+        <source src="midia/video.mp4" type="video/mp4">
+    </video>
+
+    <h1>Vídeos do Youtube:</h1>
+    <iframe width="560px" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=e7h9TrW-ceRO_GHB" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Vídeos do Vimeo:</h1>
+    <iframe src="https://player.vimeo.com/video/487165720?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+    width="560px" height="315" frameborder="0" allow="autoplay; 
+    fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" title="LESSON_animetion"></iframe>
+</body>
+</html>
