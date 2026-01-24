@@ -1,78 +1,11 @@
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(0, 0, 63);
-    color: white;
-}
-
-header{
-    background-color: rgb(0, 0, 63);
-    min-height: 150px;
-    text-align: center;
-    padding-top: 40px ;
-}
-
-header > h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
-}
-
-main{
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
+.box{
+    width: 400px;
+    height: 400px;
+    border: 5px dashed darkblue;
+    margin: 10% auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px black;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-main > h1{
-   color: black;
-   font-family: 'Times New Roman', Times, serif;
-   font-weight: bold;
-   font-size: 1.8em;
-   text-align: center;
-}
-main > h1:hover{
-    color: purple;
-    text-decoration: underline;
-}
-article> h2{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 1.8em;
-    text-align: center;
-}
-
-main img{
-    width: 100%;
-    height: auto;
-}
-
-article > ul > li > a{
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-article > ul > li > a:hover{
-    color: purple;
-}
-
-ul{
-    columns: 2;
-    list-style-position: inside;
-    text-align: center;
 }
