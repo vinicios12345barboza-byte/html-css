@@ -11,12 +11,17 @@
             padding: 0;
         }
         header{
-            background-color: lightblue;
+            background-color: rgb(247, 0, 0);
             padding: 20px;
             margin-bottom: 20px;
+            font-size: 0.8em;
         }
         body{
             text-align: center;
+            background-image: url(imagens/image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
         }
         #sla{
             background-color: rgb(0, 0, 0);
@@ -24,19 +29,20 @@
             margin-right: auto;
             margin-left: auto;
             margin-top: 10px;
-            color: lightblue;
+            color: rgb(241, 0, 0);
         }
         label{
-            background-color: rgb(179, 226, 245);
+            background-color: rgb(255, 0, 0);
         }
         input{
             margin: 4px;
         }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Qual é o seu nome e seu número?</h1>
+        <h1>Qual é o seu nome e número do seu cartão, companheiros?</h1>
     </header>
     <form action="cadastro.js" method="post" autocomplete="off">
         <p><label for="Inome">Nome:</label>
