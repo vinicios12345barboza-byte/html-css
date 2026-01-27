@@ -20,6 +20,7 @@
             text-align: center;
             background-image: url(imagens/image.png);
             background-repeat: no-repeat;
+            background-position: center top;
             background-size: cover;
             background-attachment: fixed;
         }
@@ -37,6 +38,17 @@
         input{
             margin: 4px;
         }
+
+        
+        form {
+        background-color: rgba(255, 255, 255, 0.9); 
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        margin: 50px auto; 
+        text-align: center;
+}
+        
         
     </style>
 </head>
@@ -44,12 +56,14 @@
     <header>
         <h1>Qual é o seu nome e número do seu cartão, companheiros?</h1>
     </header>
-    <form action="cadastro.js" method="post" autocomplete="off">
-        <p><label for="Inome">Nome:</label>
-        <input type="text" name="Nome" id="Inome"></p>
-        <p><label for="Inumero">Número:</label>
-        <input type="tel" name="Numero" id="Inumero"></p>
-        <p><input type="submit" value="Enviar" id="sla"></p>
-    </form>
+    <main>
+        <form action="cadastro.js" method="post" autocomplete="off">
+            <p><label for="Inome">Nome:</label>
+            <input type="text" name="Nome" id="Inome"></p>
+            <p><label for="Inumero">Número:</label>
+            <input type="tel" name="Numero" id="Inumero"></p>
+            <p><input type="submit" value="Enviar" id="sla"></p>
+        </form>
+    </main>
 </body>
 </html>
