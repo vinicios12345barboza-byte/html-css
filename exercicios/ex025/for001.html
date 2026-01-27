@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        body{
+            text-align: center;
+        }
+        #sla{
+            background-color: rgb(0, 0, 0);
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+            color: lightblue;
+        }
+        label{
+            background-color: rgb(179, 226, 245);
+        }
+        input{
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Qual é o seu nome e seu número?</h1>
+    </header>
+    <form action="cadastro.js" method="post" autocomplete="off">
+        <p><label for="Inome">Nome:</label>
+        <input type="text" name="Nome" id="Inome"></p>
+        <p><label for="Inumero">Número:</label>
+        <input type="tel" name="Numero" id="Inumero"></p>
+        <p><input type="submit" value="Enviar" id="sla"></p>
+    </form>
+</body>
+</html>
