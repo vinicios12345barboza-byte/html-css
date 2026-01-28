@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(241, 245, 0);
+    text-align: center;
+    padding: 10px;
+}
+h2, h3{
+    margin: 20px;
+    text-align: center;
+}
+
+
+img{
+    width: 560px;
+    height: 315px;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px 2px 0px black;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+article{
+    padding: 20px;
+    margin: 10px;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    font-weight: 500;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(245, 232, 52);
+    color: white;
+    padding: 15px;
+}
