@@ -7,30 +7,22 @@
     <link rel="stylesheet" href="stle.css">
 </head>
 <body>
-    <header>
-        <h1>Conhecendo o Vínicios</h1>
-        <p>Aqui vão ver meu vídeo favorito, meu personagem favorito e minha frase favorita.</p>
-    </header>
-    <main>
-     <section>
-        <h2>Aqui meu vídeo favorito:</h2>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/lKRBXVeL6yc?si=5QWm490_RQ-iy9gR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     </section>
-     <section>
-        <h2>Aqui meu personagem favorito:</h2>
-        <img src="imagens/image.png" alt="">
-     </section>
-     <article>
-        <h3>Minha frase favorita:</h3>
-        <ul>
-            <li>Eu nunca vou desistir, não importa o que aconteça.</li>
-            <li>Eu fiz essa porque queria que você olhasse pra mim...</li>
-        </ul>
-     </article>
-    </main>
-
-
-
-    <footer>&copy; Vinxciosdev</footer>
+     <main>
+         <h1>Página de Login</h1>
+         <form action="" method="post" autocomplete="on">
+            <p>
+                <label for="igmail">Gmail: </label>
+                <input type="email" name="gmail" id="igmail" required>
+            </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="senha" id="isen" required autocomplete="current-password" maxlength="11">
+            </p>
+            <p>
+                <input type="submit" value="login">
+                <input type="reset" value="Limpar">
+            </p>
+         </form>
+     </main>
 </body>
 </html>
