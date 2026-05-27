@@ -94,7 +94,7 @@ a:hover, a:active{
     }
 
     nav a:hover,
-    nav a.active{
+    nav a.ativo{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid var(--color);
